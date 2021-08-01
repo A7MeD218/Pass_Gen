@@ -18,6 +18,8 @@ def gen():
     chars = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890!@#$%^&*()"
     if len(length) == 0:
         messagebox.showerror("Error", "Please enter your password length!")
+    elif length.isalpha:
+        messagebox.showerror("Error", "Please enter your password length in numbers")
     else:
         length = int(password_len.get())
         for i in range(0, length):
